@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style (2).css">
+    <title>keyboard</title>
+    <script type="text/javascript">
+    
+      function key(obj)
+      {
+         document.getElementById('a0').value+=obj;
+        }
+      function space()
+      {
+        var a=document.getElementById("a0").value;
+        var c=a+" ";
+        document.getElementById("a0").value=c;
+      }
+      function back() {
+          //var a=document.getElementById("a0").value;
+          //var a1=a.split(" ");
+          //var a2=a1.length;
+          //var b=a2-1;
+            // var d=a1.charAt(b);
+          //var c=a1.splice(d,1," ");
+          //document.getElementById("a0").value=c;
+
+        // var a=document.getElementById("a0").value;
+        //   var a1=a.split("");
+        // document.getElementById("a0").value=a1;
+          //var a2=a1.length-2;
+        // document.getElementById("a0").value=a2;
+          //var d=a1.charAt(a2);
+         // document.getElementById("a0").value=d;
+         // var c=a1.replace(d," ");
+         // document.getElementById("a0").value=c;
+         var a=document.getElementById("a0").value;
+         document.getElementById("a0").value=a.substring(0,a.length-1);
+
+      }
+      function low()
+    {
+        var b=document.getElementById("a0").value;
+        var c=b.toLowerCase();
+        document.getElementById("a0").value=c;
+    }
+  </script>
+</head>
+
+<body>
+    <textarea style="width:1400px;height:100px;background-color: white;" id="a0">
+        
+    </textarea>
+    <div class="container">
+
+        <div class="row zero">
+            <button onclick="key(this.value)" >Esc</button>
+            <button onclick="key(this.value)">F1</button>
+            <button onclick="key(this.value)">F2</button>
+            <button onclick="key(this.value)">F3</button>
+            <button onclick="key(this.value)">F4</button>
+            <button onclick="key(this.value)">F5</button>
+            <button onclick="key(this.value)">F6</button>
+            <button onclick="key(this.value)">F7</button>
+            <button onclick="key(this.value)">F8</button>
+            <button onclick="key(this.value)">F9</button>
+            <button onclick="key(this.value)">F10</button>
+            <button onclick="key(this.value)">F11</button>
+            <button onclick="key(this.value)">F12</button>
+            <button onclick="key(this.value)">Insect</button>
+            <button onclick="key(this.value)" class="print">printScr</button>
+            <button onclick="key(this.value)">Delete</button>
+        </div>
+
+
+        <div class="row one">
+            <button onclick="key(this.value)" value="~">~</button>
+            <button onclick="key(this.value)" value="1">1</button>
+            <button onclick="key(this.value)" value="2">2</button>
+            <button onclick="key(this.value)" value="3">3</button>
+            <button onclick="key(this.value)" value="4">4</button>
+            <button onclick="key(this.value)" value="5">5</button>
+            <button onclick="key(this.value)" value="6">6</button>
+            <button onclick="key(this.value)" value="7">7</button>
+            <button onclick="key(this.value)" value="8">8</button>
+            <button onclick="key(this.value)" value="9">9</button>
+            <button onclick="key(this.value)" value="10">10</button>
+            <button onclick="key(this.value)" value="-">-</button>
+            <button onclick="key(this.value)" value="=">=</button>
+            <button onclick="back()" class="back">Backspace</button>
+            <button onclick="key(this.value)" value="">Home</button>
+        </div>
+
+
+        <div class="row two">
+            <button onclick="key(this.value)" class="tab">Tab</button>
+            <button onclick="key(this.value)" value="Q">Q</button>
+            <button onclick="key(this.value)" value="W">W</button>
+            <button onclick="key(this.value)" value="E">E</button>
+            <button onclick="key(this.value)" value="R">R</button>
+            <button onclick="key(this.value)" value="T">T</button>
+            <button onclick="key(this.value)" value="Y">Y</button>
+            <button onclick="key(this.value)" value="U">U</button>
+            <button onclick="key(this.value)" value="I">I</button>
+            <button onclick="key(this.value)" value="O">O</button>
+            <button onclick="key(this.value)" value="P">P</button>
+            <button onclick="key(this.value)" value="{">{</button>
+            <button onclick="key(this.value)" value="}">}</button>
+            <button onclick="key(this.value)" value="\" class="slace">\</button>
+            <button onclick="key(this.value)" >Pg Up</button>
+        </div>
+
+
+        <div class="row three">
+            <button onclick="key(this.value)" class="cap" onmouseover="low()">Caps Lock</button>
+            <button onclick="key(this.value)" value="A">A</button>
+            <button onclick="key(this.value)" value="S">S</button>
+            <button onclick="key(this.value)" value="D">D</button>
+            <button onclick="key(this.value)" value="F">F</button>
+            <button onclick="key(this.value)" value="G">G</button>
+            <button onclick="key(this.value)" value="H">H</button>
+            <button onclick="key(this.value)" value="I">I</button>
+            <button onclick="key(this.value)" value="J">J</button>
+            <button onclick="key(this.value)" value="K">K</button>
+            <button onclick="key(this.value)" value="L">L</button>
+            <button onclick="key(this.value)" value=";">;</button>
+            <button onclick="key(this.value)" value="'">"</button>
+            <button onclick="key(this.value)" class="enter-btn">Enter</button>
+            <button onclick="key(this.value)">Pg Dn</button>
+        </div>
+
+        <div class="row four">
+            <button onclick="key(this.value)" class="shift">Shift</button>
+            <button onclick="key(this.value)" value="Z">Z</button>
+            <button onclick="key(this.value)" value="X">X</button>
+            <button onclick="key(this.value)" value="C">C</button>
+            <button onclick="key(this.value)" value="V">V</button>
+            <button onclick="key(this.value)" value="B">B</button>
+            <button onclick="key(this.value)" value="N">N</button>
+            <button onclick="key(this.value)" value="M">M</button>
+            <button onclick="key(this.value)" value="<"> < </button>
+            <button onclick="key(this.value)" value=">">></button>
+            <button onclick="key(this.value)" value="?">?</button>
+            <button onclick="key(this.value)" class="shift">Shift</button>
+            <button onclick="key(this.value)">↑</button>
+            <button onclick="key(this.value)">End</button>
+        </div>
+
+        <div class="row five">
+            <button onclick="key(this.value)" class="last">Ctrl</button>
+            <button onclick="key(this.value)" class="last">Fn</button>
+            <button onclick="key(this.value)" class="last">Win</button>
+            <button onclick="key(this.value)" class="last">Alt</button>
+            <button onclick="space()" class="space">space</button>
+            <button onclick="key(this.value)" class="last">Alt</button>
+            <button onclick="key(this.value)" class="last">Fn</button>
+            <button onclick="key(this.value)" class="last">Ctrl</button>
+            <button onclick="key(this.value)" class="last">←</button>
+            <button onclick="key(this.value)" class="last">↓</button>
+            <button onclick="key(this.value)" class="last">→</button>
+       </div>
+    </div>
+</body>
+</html>
